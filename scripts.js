@@ -56,12 +56,25 @@ function filterVeganItems() {
 
 
 
-buttonForEach.addEventListener('click', () => renderAllProducts(menuOptions))
-buttonMap.addEventListener('click', mapItems)
-buttonReduce.addEventListener('click', reduceItems)
-buttonFilter.addEventListener('click', filterVeganItems);
+buttonForEach.addEventListener('click', () => {
+    console.log('Botão For Each clicado');
+    renderAllProducts(menuOptions);
+});
 
-// map //
+buttonMap.addEventListener('click', () => {
+    console.log('Botão Map clicado');
+    mapItems();
+});
+
+buttonReduce.addEventListener('click', () => {
+    console.log('Botão Reduce clicado');
+    reduceItems();
+});
+
+buttonFilter.addEventListener('click', () => {
+    console.log('Botão Filter clicado');
+    filterVeganItems();
+});
 
 
 
